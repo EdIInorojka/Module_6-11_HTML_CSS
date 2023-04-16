@@ -24,7 +24,7 @@ body {
 
 .container{
     margin: 0 auto;
-    width: 1170px;
+    max-width: 1170px;
 }
 
 .container *{
@@ -32,7 +32,7 @@ body {
 }
 
 .header{
-    height: 154px;
+    min-height: 154px;
     vertical-align: top;
     margin-bottom: 70px;
 }
@@ -57,13 +57,13 @@ body {
     line-height: 20px;
     color: #666666;
     vertical-align: top;
-    padding: 17px 0;
+    align-self: center;
 }
 
 .header-personal_account{
     position: absolute;
     display: inline-block;
-    padding: 17px 0;
+    align-self: center;
     vertical-align: top;
     right: 0;
     font-family: 'Muller';
@@ -135,6 +135,15 @@ body {
     color: #CC9933;
 }
 
+.special_offers{
+    margin-bottom: 70px;
+}
+
+.special_offers-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .special_offers-title{
     display: block;
     font-family: 'Muller';
@@ -147,39 +156,184 @@ body {
 }
 
 .special_offer-1{
+    flex-grow: 1;
     vertical-align: top;
     position: relative;
-    display: inline-block;
     width: 573px;
-    height: 258px;
-    background-image: url(../img/Rectangle\ 15.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-right: 19px;
+    margin-bottom: 24px;
+    margin-right: 24px;
 }
 
 .special_offer-2{
-    
+    flex-grow: 1;
     position: relative;
-    display: inline-block;
     width: 573px;
-    height: 258px;
-    background-image: url(../img/Rectangle\ 15\ \(1\).png);
-    background-repeat: no-repeat;
-    background-size: contain;
     margin-right: 24px;
 }
 
 .special_offer-3{
+    flex-grow: 1;
     margin: 0;
-    vertical-align: middle;
     bottom: 10px;
     left: 0px;
-    display: inline-block;
     position: relative absolute;
     width: 573px;
-    height: 540px;
-    background-image: url(../img/33\ 1.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
+}
+
+.about_us-content{
+    margin-bottom: 70px;
+}
+
+.about_us-title{
+    margin-bottom: 20px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.about-us-paragraph{
+    max-width: 872px;
+    min-height: 192px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+}
+
+.services{
+    margin-bottom: 70px;
+}
+
+.services-title{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.services-items{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.service-items-li{
+    width: 573px;
+    margin-right: 24px;
+}
+
+.service-items-li:nth-child(2n){
+    margin-right: 0;
+    margin-bottom: 24px;
+}
+
+.services-items-title{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 200%;
+    color: #CC9933;
+}
+
+.services-items-paragraph{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+}
+
+.advantages{
+    margin-bottom: 70px;
+}
+
+.advantages-title{
+    margin-bottom: 20px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.advantages-content-ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.advantages-content-ul-li{
+    margin-right: 22px;
+    margin-bottom: 22px;
+    width: 276px;
+}
+
+.advantages-content-ul-li:nth-child(4n){
+    margin-right: 0;
+}
+
+.accommodation{
+    margin-bottom: 70px;
+}
+
+.accomodation-title{
+    margin-bottom: 20px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.accommodation-content-ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.accommodation-content-ul-li{
+    width: 374px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+
+.accommodation-content-ul-li:nth-child(3n){
+    margin-right: 0;
+}
+
+.accommodation-content-ul-li-ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.accommodation-content-ul-li-ul-li{
+    margin-bottom: 16px;
+}
+
+.accomodation-content-ul-li-ul-li-h4{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.accommodation-content-ul-li-ul-li-place{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #999999;
 }
