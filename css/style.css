@@ -36,6 +36,8 @@ body {
     margin: 0;
 }
 
+/* <----------------Header----------------> */
+
 .header{
     min-height: 154px;
     vertical-align: top;
@@ -146,6 +148,8 @@ body {
     line-height: 16px;
     color: #CC9933;
 }
+
+/* <----------------Special_offers----------------> */
 
 .special_offers{
     margin-bottom: 70px;
@@ -261,6 +265,8 @@ body {
     color: #F0BF5F;
 }
 
+/* <----------------About_us----------------> */
+
 .about_us-content{
     margin-bottom: 70px;
 }
@@ -283,6 +289,8 @@ body {
     font-size: 16px;
     line-height: 200%;
 }
+
+/* <----------------Services----------------> */
 
 .services{
     margin-bottom: 70px;
@@ -347,6 +355,8 @@ body {
     line-height: 200%;
 }
 
+/* <----------------Adventages----------------> */
+
 .advantages{
     margin-bottom: 70px;
 }
@@ -371,11 +381,59 @@ body {
     margin-right: 22px;
     margin-bottom: 22px;
     width: 276px;
+    min-height: 276px;
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 15px;
+    background-repeat: no-repeat;
 }
 
 .advantages-content-ul-li:nth-child(4n){
     margin-right: 0;
 }
+
+.advantages-content-ul-li-paragraph{
+    padding: 116px 42px 32px 45px;
+    text-align: left;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
+}
+
+.advantages-img{
+    background-position: 45px 40px;
+    background-size: 64px 66px;
+}
+
+.advantages-img-1{
+    background-image: url("../img/bathtub.svg");
+}
+.advantages-img-2{
+    background-image: url("../img/hanger.svg");
+}
+.advantages-img-3{
+    background-image: url("../img/heating.svg");
+}
+.advantages-img-4{
+    background-image: url("../img/hotel-key.svg");
+}
+.advantages-img-5{
+    background-image: url("../img/parking.svg");
+}
+.advantages-img-6{
+    background-image: url("../img/reception.svg");
+}
+.advantages-img-7{
+    background-image: url("../img/security-box.svg");
+}
+.advantages-img-8{
+    background-image: url("../img/swimming-pool.svg");
+}
+
+/* <----------------Accomodation----------------> */
 
 .accommodation{
     margin-bottom: 70px;
@@ -401,6 +459,16 @@ body {
     width: 374px;
     margin-right: 24px;
     margin-bottom: 24px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    min-height: 440px;
+}
+
+.accommodation-content-ul-li-hotel_img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 0;
+    margin-bottom: 32px;
 }
 
 .accommodation-content-ul-li:nth-child(3n){
@@ -410,10 +478,18 @@ body {
 .accommodation-content-ul-li-ul{
     list-style-type: none;
     padding-left: 0;
+    margin-left: 45px;
 }
 
 .accommodation-content-ul-li-ul-li{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    margin-right: 52px;
     margin-bottom: 16px;
+    display: inline-block;
 }
 
 .accomodation-content-ul-li-ul-li-h3{
@@ -433,4 +509,53 @@ body {
     font-size: 16px;
     line-height: 16px;
     color: #999999;
+    margin-bottom: 20px;
 }
+
+.accommodation-content-ul-li-stars{
+    display: inline-block;
+}
+
+.accommodation-content-ul-li-buttondiv{
+    margin-bottom: 45px;
+}
+
+.accommodation-price{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.accommodation-from{
+    color: #999999;
+}
+
+.accomodation-all_variants{
+    position: relative;
+    background-image: url("../img/41.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 440px;
+}
+
+.accommodation-all_variants-a{
+    position: absolute;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 200%;
+    color: #FFFFFF;
+    bottom: 27px;
+    left: 54px;
+    background-image: url("../img/Rectangle\ 2_white.svg");
+    padding-right: 15px;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+/* <----------------Want_tour----------------> */
+
+/* <----------------Contacts----------------> */
+
+/* <----------------Footer----------------> */
