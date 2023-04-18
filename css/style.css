@@ -296,10 +296,6 @@ body {
     margin-bottom: 70px;
 }
 
-.services-img{
-    border-radius: 15px 15px 0px 0px;
-}
-
 .services-title{
     font-family: 'Muller';
     font-style: normal;
@@ -317,7 +313,10 @@ body {
 }
 
 .services-card-content{
+    border-radius: 15px;
     padding: 26px 126px 35px 45px;
+    position: absolute;
+    bottom: 0;
 }
 
 .service-items-li{
@@ -327,6 +326,9 @@ body {
     margin-bottom: 24px;
     background: #FFFFFF;
     border-radius: 15px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .service-items-li:nth-child(2n){
@@ -353,6 +355,22 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 200%;
+}
+
+.services-img-1{
+    background-image: url("../img/10.jpg");
+}
+
+.services-img-2{
+    background-image: url("../img/15.jpg");
+}
+
+.services-img-3{
+    background-image: url("../img/12.jpg");
+}
+
+.services-img-4{
+    background-image: url("../img/carlo-d-agnolo-aFxSh_l4fbY-unsplash.jpg");
 }
 
 /* <----------------Adventages----------------> */
