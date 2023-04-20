@@ -15,7 +15,7 @@
                     <img src="img/logo.svg" class="header-logo" alt="Логотип">
                 </a>
                 <address class="header-address">
-                    +7 495 322-54-48
+                    <a href="tel:+74953225448">+7 495 322-54-48</a>
                 </address>
                 <a href="#" class="header-personal_account">
                     Личный кабинет
@@ -82,7 +82,7 @@
                     <div class="special_offers-left_content">
                         <div class="special_offer-1">
                             <h3 class="special_offer-title">
-                                Мальдивские<br> острова
+                                Мальдивские острова
                             </h3>
                             <div class="special_offer-prices">
                                 <p class="special_offer-paragraph">
@@ -94,8 +94,11 @@
                             </div>
                         </div>
                         <div class="special_offer-2">
+                            <h3 class="special_offer-title-2-fistline">
+                                Горящий
+                            </h3>
                             <h3 class="special_offer-title">
-                                Горящий<br> тур на остров Крит
+                                тур на остров Крит
                             </h3>
                             <div class="special_offer-prices">
                                 <p class="special_offer-paragraph">
@@ -109,7 +112,7 @@
                     </div>
                     <div class="special_offer-3">
                         <h3 class="special_offer-title-3">
-                            Номера<br> категории<br> люкс
+                            Номера категории<br> люкс
                         </h3>
                         <div class="special_offer-prices">
                             <p class="special_offer-paragraph">
@@ -143,45 +146,68 @@
                         Услуги
                     </h2>
                     <ul class="services-items">
-                        <li class="service-items-li services-img-1">
-                            <div class="services-card-content">
-                                <h3>
-                                    <a href="#" class="services-items-title">Эксклюзивное обслуживание</a>
-                                </h3>
-                                <p class="services-items-paragraph">
-                                    Равным образом постоянный количественный рост и сфера нашей активности
-                                </p>
-                            </div>
+                        <li class="service-items-li">
+                            <article class="card">
+                                <div class="services-img-1">
+
+                                </div>
+                                <div class="services-card-content">
+                                    <h3>
+                                        <a href="#" class="services-items-title">Эксклюзивное обслуживание</a>
+                                    </h3>
+                                    <p class="services-items-paragraph">
+                                        Равным образом постоянный количественный рост и сфера нашей активности
+                                    </p>
+                                </div>
+                            </article>
                         </li>
-                        <li class="service-items-li services-img-2">
-                            <div class="services-card-content">
-                                <h3>
-                                    <a href="#" class="services-items-title">Аренда банкетных залов</a>
-                                </h3>
-                                <p class="services-items-paragraph">
-                                    Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
-                                </p>
-                            </div>
+                        <li class="service-items-li">
+                            <article class="card">
+                                <div class=" services-img-2">
+
+                                </div>
+                                <div class="services-card-content">
+                                    <h3>
+                                        <a href="#" class="services-items-title">Аренда банкетных залов</a>
+                                    </h3>
+                                    <p class="services-items-paragraph">
+                                        Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
+                                    </p>
+                                </div>
+                            </article>
+                            
                         </li>
-                        <li class="service-items-li services-img-3">
-                            <div class="services-card-content">
-                                <h3>
-                                    <a href="#" class="services-items-title">Сауны, бассейны, бани, фитнес-залы</a>
-                                </h3>
-                                <p class="services-items-paragraph">
-                                    Не следует, однако забывать, что начало повседневной работы по формированию позиции
-                                </p>
-                            </div>
+                        <li class="service-items-li">
+                            <article class="card">
+                                <div class="services-img-3">
+
+                                </div>
+                                <div class="services-card-content">
+                                    <h3>
+                                        <a href="#" class="services-items-title">Сауны, бассейны, бани, фитнес-залы</a>
+                                    </h3>
+                                    <p class="services-items-paragraph">
+                                        Не следует, однако забывать, что начало повседневной работы по формированию позиции
+                                    </p>
+                                </div>
+                            </article>
+                            
                         </li>
-                        <li class="service-items-li services-img-4">
-                            <div class="services-card-content">
-                                <h3>
-                                    <a href="#" class="services-items-title">Охраняемые автомобильные стоянки</a>
-                                </h3>
-                                <p class="services-items-paragraph">
-                                    Не следует, однако забывать, что начало повседневной работы по формированию позиции
-                                </p>
-                            </div>
+                        <li class="service-items-li">
+                            <article class="card">
+                                <div class="services-img-4">
+
+                                </div>
+                                <div class="services-card-content">
+                                    <h3>
+                                        <a href="#" class="services-items-title">Охраняемые автомобильные стоянки</a>
+                                    </h3>
+                                    <p class="services-items-paragraph">
+                                        Не следует, однако забывать, что начало повседневной работы по формированию позиции
+                                    </p>
+                                </div>
+                            </article>
+                            
                         </li>
                     </ul>
                 </div>
@@ -466,6 +492,39 @@
                     <h2 class="want_tour-title">
                         Хочу тур
                     </h2>
+                    <form action="want_tour" method="post" class="want_tour-form">
+                        <div class="want_tour-element selector">
+                            <h4 class="want_tour-h4">Город вылета</h4>
+                            <select name="Город вылета" class="no-border-element select-arrow">
+                                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                <option value="Москва">Москва</option>
+                                <option value="Волгоград">Волгоград</option>
+                            </select>
+                        </div>
+                        <div class="want_tour-element selector">
+                            <h4 class="want_tour-h4">Страна</h4>
+                            <select name="Страна" class="no-border-element select-arrow">
+                                <option value="Австралия">Австралия</option>
+                                <option value="Россия">Россия</option>
+                                <option value="Франция">Франция</option>
+                            </select>
+                        </div>
+                        <div class="want_tour-element date-input">
+                            <h4 class="want_tour-h4 date-margin">Дата прибытия</h4>
+                            <input name="Дата прибытия" type="date" class="date-input no-border-element"> 
+                        </div>
+                        <div class="want_tour-element number-div">
+                            <h4 class="want_tour-h4">Ночей</h4>
+                            <input name="Ночей" type="number" value="1" min="1" max="10" class="nights_number-input">
+                        </div>
+                        <div class="want_tour-element number-div">
+                            <h4 class="want_tour-h4">Туристы</h4>
+                            <input name="Туристы" type="number" value="1" min="1" max="10" class="people_number-input">
+                        </div>
+                        <div class="want_tour-button-element">
+                            <button type="submit" class="want_tour-button">Найти</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
@@ -475,6 +534,44 @@
                     <h2 class="contacts-title">
                         Контакты
                     </h2>
+                    <div>
+                        <div class="contacts-information">
+                            <h3 class="contacts-h3">
+
+                            </h3>
+                            <ul class="contacts-information-text">
+
+                            </ul>
+                        </div>
+                        <div class="contacts-information">
+                            <h3 class="contacts-h3">
+
+                            </h3>
+                            <ul class="contacts-information-text">
+
+                            </ul>
+                        </div>
+                        <div class="contacts-information">
+                            <h3 class="contacts-h3">
+
+                            </h3>
+                            <ul class="contacts-information-text">
+
+                            </ul>
+                        </div>
+                        <div class="contacts-information">
+                            <h3 class="contacts-h3">
+
+                            </h3>
+                            <ul class="contacts-information-text">
+
+                            </ul>
+                        </div>
+                        <div>
+                            
+                        </div>
+                    </div>
+                    <img src="img/Group 44.jpg" alt="Ресепшн" class="contacts-img">
                 </div>
             </div>
         </section>
