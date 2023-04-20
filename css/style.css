@@ -175,6 +175,7 @@ body {
     line-height: 40px;
     color: #333333;
     margin-bottom: 20px;
+    margin-left: 45px;
 }
 
 .special_offers-left_content{
@@ -297,6 +298,7 @@ body {
     font-weight: 400;
     font-size: 40px;
     line-height: 40px;
+    margin-left: 45px;
 }
 
 .about-us-paragraph{
@@ -326,6 +328,7 @@ body {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 20px;
+    margin-left: 45px;
 }
 
 .services-items{
@@ -427,6 +430,7 @@ body {
     font-weight: 400;
     font-size: 40px;
     line-height: 40px;
+    margin-left: 45px;
 }
 
 .advantages-content-ul{
@@ -505,6 +509,7 @@ body {
     font-weight: 400;
     font-size: 40px;
     line-height: 40px;
+    margin-left: 45px;
 }
 
 .accommodation-content-ul{
@@ -577,6 +582,19 @@ body {
     margin-bottom: 0;
 }
 
+.accommodation-content-ul-li-button{
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+    padding: 13px 20px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #CC9933;
+    background: none;
+}
+
 .accommodation-price{
     font-weight: 700;
     font-size: 20px;
@@ -613,6 +631,10 @@ body {
 
 /* <----------------Want_tour----------------> */
 
+.want_tour{
+    margin-bottom: 70px;
+}
+
 .want_tour-content{
     padding: 45px 0;
     background: #E9E9E9;
@@ -620,6 +642,7 @@ body {
 }
 
 .want_tour-title{
+    margin-left: 45px;
     font-family: 'Muller';
     font-style: normal;
     font-weight: 400;
@@ -728,8 +751,211 @@ body {
 
 /* <----------------Contacts----------------> */
 
-.contacts-img{
-    
+.contacts-content{
+    display: flex;
+    padding: 45px;
+    background: #FFFFFF;
+    border-radius: 15px;
 }
 
+.contacts-title{
+    margin-left: 45px;
+    margin-bottom: 20px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #333333;
+}
+
+.contacts-ul{
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+    width: 375px;
+    min-height: 528px;
+    margin-right: 52px;
+}
+
+.contacts-li:not(:last-child){
+    position: relative;
+    display: flex;
+    width: 375px;
+    min-height: 72px;
+    border-bottom: 1px solid #E9E9E9;
+    padding-bottom: 23px;
+    margin-bottom: 25px;
+}
+
+.contacts-li:nth-child(3n){
+    min-height: 122px;
+}
+
+.contacts-content-text{
+    max-width: 229px;
+    min-height: 48px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.contacts-position{
+    width: 229px;
+    position: absolute;
+    vertical-align: middle;
+    right: 0;
+    text-align: left;
+}
+
+.contacts-content-h4{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.phones-ul{
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.phone{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #CC9933;
+}
+
+.email-content-ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.email{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #CC9933;
+}
+
+.email-text{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #999999;
+}
+
+.make_the_road{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 213px;
+    height: 70px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #CC9933;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+    background: none;
+}
+
+.contacts{
+    margin-bottom: 40px;
+}
 /* <----------------Footer----------------> */
+
+.footer{
+    margin-bottom: 30px;
+}
+
+.footer-content{
+    position: relative;
+    background: #333333;
+    border-radius: 15px;
+    min-height: 341px;
+    display: flex;
+    padding: 45px;
+}
+
+.footer-left{
+    margin-right: 125px;
+}
+
+.footer-text{
+    max-width: 302px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 190%;
+    color: #FFFFFF;
+    margin-bottom: 37px;
+}
+
+.footer-text:last-child{
+    margin-bottom: 40px;
+}
+
+.user_agreement{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #CC9933;
+}
+
+.footer-right{
+    margin-right: 269px;
+}
+
+.footer-right-text{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.footer-right-ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-phone_email{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #CC9933;
+}
+
+.sun_img{
+    position: absolute;
+    right: 177px;
+    bottom: 1px;
+}
+
+.messenger-img{
+    display: flex;
+    width: 25px;
+    margin-bottom: 20px;
+}
