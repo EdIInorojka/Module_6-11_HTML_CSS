@@ -9,6 +9,13 @@ html {
 	box-sizing: inherit;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+
+ opacity: 1;
+
+}
+
 @font-face {
 	font-family: 'Muller'; 
 	src: url(../fonts/MullerMedium.woff2); 
@@ -172,7 +179,7 @@ body {
 
 .special_offers-left_content{
     width: 573px;
-    height: 540px;
+    min-height: 540px;
     margin-right: 24px;
 }
 
@@ -181,12 +188,12 @@ body {
     vertical-align: top;
     position: relative;
     width: 573px;
-    height: 258px;
+    min-height: 258px;
     margin-bottom: 24px;
     margin-right: 24px;
     background-image: url("../img/Rectangle\ 15.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     border-radius: 15px;
 }
 
@@ -194,14 +201,15 @@ body {
     padding: 40px 108px 40px 45px;
     position: relative;
     width: 573px;
-    height: 258px;
+    min-height: 258px;
     background-image: url("../img/Rectangle\ 15\ \(1\).png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     border-radius: 15px;
 }
 
 .special_offer-title{
+    max-width: 420px;
     margin-bottom: 15px;
     font-family: 'Muller';
     font-style: normal;
@@ -210,6 +218,17 @@ body {
     line-height: 40px;
     color: #FFFFFF;
     z-index: 1;
+}
+
+.special_offer-title-2-fistline{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+    z-index: 1;
+    margin-bottom: 0;
 }
 
 .special_offer-title-3{
@@ -237,13 +256,13 @@ body {
 }
 
 .special_offer-3{
-    padding: 212px 229px 148px 45px;
+    padding: 212px 229px 40px 45px;
     width: 573px;
-    height: 540px;
+    min-height: 540px;
     position: relative;
     background-image: url("../img/33\ 1.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     border-radius: 15px;
 }
 
@@ -296,6 +315,10 @@ body {
     margin-bottom: 70px;
 }
 
+.card{
+    min-height: 330px;
+}
+
 .services-title{
     font-family: 'Muller';
     font-style: normal;
@@ -315,8 +338,6 @@ body {
 .services-card-content{
     border-radius: 15px;
     padding: 26px 126px 35px 45px;
-    position: absolute;
-    bottom: 0;
 }
 
 .service-items-li{
@@ -358,19 +379,39 @@ body {
 }
 
 .services-img-1{
+    border-radius: 15px 15px 0 0;
+    height: 165px;
     background-image: url("../img/10.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .services-img-2{
+    border-radius: 15px 15px 0 0;
+    height: 165px;
     background-image: url("../img/15.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .services-img-3{
+    border-radius: 15px 15px 0 0;
+    height: 165px;
     background-image: url("../img/12.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .services-img-4{
+    border-radius: 15px 15px 0 0;
+    height: 165px;
     background-image: url("../img/carlo-d-agnolo-aFxSh_l4fbY-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* <----------------Adventages----------------> */
@@ -485,8 +526,7 @@ body {
 .accommodation-content-ul-li-hotel_img{
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    padding: 0;
-    margin-bottom: 32px;
+    margin-bottom: 0;
 }
 
 .accommodation-content-ul-li:nth-child(3n){
@@ -495,8 +535,7 @@ body {
 
 .accommodation-content-ul-li-ul{
     list-style-type: none;
-    padding-left: 0;
-    margin-left: 45px;
+    padding: 32px 45px 45px 45px;
 }
 
 .accommodation-content-ul-li-ul-li{
@@ -535,7 +574,7 @@ body {
 }
 
 .accommodation-content-ul-li-buttondiv{
-    margin-bottom: 45px;
+    margin-bottom: 0;
 }
 
 .accommodation-price{
@@ -574,6 +613,123 @@ body {
 
 /* <----------------Want_tour----------------> */
 
+.want_tour-content{
+    padding: 45px 0;
+    background: #E9E9E9;
+    border-radius: 15px;
+}
+
+.want_tour-title{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.want_tour-form{
+    background: #FFFFFF;
+    border-radius: 15px;
+    margin: 0 45px;
+    width: 1080px;
+    height: 106px;
+    display: flex;
+    align-self: center;
+    padding: 0 28px;
+}
+
+.want_tour-element{
+    margin-top: 31px;
+    margin-bottom: 32px;
+    margin-right: 41px;
+    border: 0;
+}
+
+.want_tour-element:last-child{
+    margin-right: 51px;
+}
+
+.number-div{
+    margin-bottom: 30px;
+    width: 121px;
+    height: 45px;
+}
+
+.want_tour-button-element{
+    margin: 32px 0;
+}
+
+.selector{
+    width: 169px;
+    height: 43px;
+    outline: none;
+    background-image: url("../img/Rectangle\ 2arrow.svg");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+.date-input{
+    width: 121px;
+    height: 43px;
+}
+
+
+.want_tour-h4{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.date-margin{
+    margin-bottom: 0;
+}
+
+.no-border-element{
+    border: none;
+}
+
+.nights_number-input{
+    width: 121px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.people_number-input{
+    width: 121px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.want_tour-button{
+    background-color: #fff;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #CC9933;
+    padding: 13px 30px;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+}
+
+.select-arrow{
+    appearance: none;
+}
+
 /* <----------------Contacts----------------> */
+
+.contacts-img{
+    
+}
 
 /* <----------------Footer----------------> */
