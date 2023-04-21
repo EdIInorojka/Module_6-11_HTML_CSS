@@ -265,6 +265,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
+    background-position: center;
 }
 
 .special_offer-buttons{
@@ -309,6 +310,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 200%;
+    color: #000000;
 }
 
 /* <----------------Services----------------> */
@@ -606,23 +608,22 @@ body {
 }
 
 .accomodation-all_variants{
-    position: relative;
+    display: flex;
     background-image: url("../img/41.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     height: 440px;
+    padding: 27px 54px;
 }
 
 .accommodation-all_variants-a{
-    position: absolute;
     font-family: 'Muller';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 200%;
     color: #FFFFFF;
-    bottom: 27px;
-    left: 54px;
+    align-self: flex-end;
     background-image: url("../img/Rectangle\ 2_white.svg");
     padding-right: 15px;
     background-repeat: no-repeat;
