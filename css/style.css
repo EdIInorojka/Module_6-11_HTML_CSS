@@ -18,7 +18,38 @@ input[type=number]::-webkit-outer-spin-button {
 
 @font-face {
 	font-family: 'Muller'; 
-	src: url(../fonts/MullerMedium.woff2); 
+	src: url(../fonts/MullerBold.woff),
+    url(../fonts/MullerBold.woff2);
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Muller'; 
+	src: url(../fonts/MullerLight.woff),
+    url(../fonts/MullerLight.woff2);
+    font-style: normal;
+    font-display: swap;
+    font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Muller'; 
+	src: url(../fonts/MullerMedium.woff2),
+    url(../fonts/MullerMedium.woff);
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Muller'; 
+	src: url(../fonts/MullerRegular.woff),
+    url(../fonts/MullerRegular.woff2);
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
 }
 
 a {
@@ -31,7 +62,7 @@ img {
 }
 
 body {
-	font-family: Arial, Verdana, sans-serif;
+	font-family: 'Muller', sans-serif;
 }
 
 .container{
@@ -195,6 +226,7 @@ body {
     background-image: url("../img/Rectangle\ 15.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     border-radius: 15px;
 }
 
@@ -206,6 +238,7 @@ body {
     background-image: url("../img/Rectangle\ 15\ \(1\).png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     border-radius: 15px;
 }
 
@@ -230,6 +263,7 @@ body {
     color: #FFFFFF;
     z-index: 1;
     margin-bottom: 0;
+    border-radius: 15px;
 }
 
 .special_offer-title-3{
@@ -554,6 +588,7 @@ body {
     margin-right: 52px;
     margin-bottom: 16px;
     display: inline-block;
+    max-width: 160px;
 }
 
 .accomodation-content-ul-li-ul-li-h3{
@@ -576,6 +611,11 @@ body {
     margin-bottom: 20px;
 }
 
+.price-stars{
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+}
 .accommodation-content-ul-li-stars{
     display: inline-block;
 }
@@ -611,7 +651,7 @@ body {
     display: flex;
     background-image: url("../img/41.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 440px;
     padding: 27px 54px;
 }
