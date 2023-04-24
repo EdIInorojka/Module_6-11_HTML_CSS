@@ -652,7 +652,7 @@ body {
     background-image: url("../img/41.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 440px;
+    min-height: 440px;
     padding: 27px 54px;
 }
 
