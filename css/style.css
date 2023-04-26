@@ -107,40 +107,52 @@ body {
 .account__style:focus{
     color: var(--focus__color);
     background-image: url("../img/keyboard_tab.svg");
-    transition: color 0 ease-in-out;
+    transition: color .3s ease-in-out;
 }
 
 .account__style:hover{
     color: var(--hover__light__color);
     background-image: url("../img/keyboard_tab_light.svg");
-    transition: color 0 ease-in-out;
+    transition: color .3s ease-in-out;
 }
 
 
 .account__style:active{
     color: var(--active__color);
     padding: 5px;
-    border: 1px solid #CC9933;
+    outline: 1px solid #CC9933;
     background-image: url("../img/keyboard_tab.svg");
-    transition: color 0 ease-in-out;
+    transition: color .3s ease-in-out;
 }
 
 .email-style:focus{
     color: var(--focus__color);
-    transition: color 0 ease-in-out;
+    transition: color .3s ease-in-out;
 }
 
 .email-style:hover{
     color: var(--hover__light__color);
-    transition: color 0 ease-in-out;
+    transition: color .3s ease-in-out;
 }
 
 
 .email-style:active{
     color: var(--active__color);
-    padding: 5px;
-    border: 1px solid #CC9933;
-    transition: color 0 ease-in-out;
+    outline: 1px solid #CC9933;
+    transition: color .3s ease-in-out;
+}
+
+.icon-style:focus svg path{
+    fill: var(--focus__color);
+}
+
+.icon-style:hover svg path{
+    fill: var(--hover__light__color);
+}
+
+
+.icon-style:active svg path{
+    fill: var(--active__color);
 }
 
 /* <----------------Header----------------> */
@@ -202,6 +214,9 @@ body {
     background-size: 24px;
     background-repeat: no-repeat;
     background-position: left center;
+    outline: inherit;
+    outline-offset: 5px 5px 5px 29px;
+    transition: outline .3s ease-in-out;
 }
 
 .header-nav{
@@ -233,6 +248,9 @@ body {
     font-size: 16px;
     line-height: 16px;
     color: #666666;
+    outline: inherit;
+    outline-offset: 5px;
+    transition: border-color .3s ease-in-out;
 }
 
 .header-list-additional{
@@ -255,6 +273,7 @@ body {
     font-size: 16px;
     line-height: 16px;
     color: #CC9933;
+    transition: background-color .3s ease-in-out;
 }
 
 /* <----------------Special_offers----------------> */
@@ -705,6 +724,7 @@ body {
     line-height: 16px;
     color: #CC9933;
     background: none;
+    transition: background-color .3s ease-in-out;
 }
 
 .accommodation-price{
@@ -856,6 +876,7 @@ body {
     padding: 13px 30px;
     border: 1px solid #CC9933;
     border-radius: 10px;
+    transition: background-color .3s ease-in-out;
 }
 
 .select-arrow{
@@ -953,6 +974,8 @@ body {
     font-size: 16px;
     line-height: 150%;
     color: #CC9933;
+    outline: inherit;
+    outline-offset: 5px;
 }
 
 .email-content-ul{
@@ -967,6 +990,9 @@ body {
     font-size: 16px;
     line-height: 150%;
     color: #CC9933;
+    width: 128px;
+    outline: inherit;
+    outline-offset: 5px;
 }
 
 .email-text{
@@ -992,6 +1018,7 @@ body {
     border: 1px solid #CC9933;
     border-radius: 10px;
     background: none;
+    transition: background-color .3s ease-in-out;
 }
 
 .contacts{
@@ -1077,6 +1104,8 @@ body {
     font-size: 16px;
     line-height: 150%;
     color: #CC9933;
+    outline: inherit;
+    outline-offset: 5px;
 }
 
 .sun_img{
@@ -1089,4 +1118,5 @@ body {
     display: flex;
     width: 25px;
     margin-bottom: 20px;
+    background-color: inherit;
 }
