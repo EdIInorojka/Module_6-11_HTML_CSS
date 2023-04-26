@@ -16,6 +16,15 @@ input[type=number]::-webkit-outer-spin-button {
 
 }
 
+:root{
+    --hover__color: #CC9933;
+    --focus__color: #CC9933;
+    --active__color: #A47312;
+    --not_default_text_color: #FFFFFF;
+    --gradient: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
+    --hover__light__color: #F0BF5F;
+}
+
 @font-face {
 	font-family: 'Muller'; 
 	src: url(../fonts/MullerBold.woff),
@@ -74,6 +83,66 @@ body {
     margin: 0;
 }
 
+/* <----------------Transitions----------------> */
+
+.button-style:focus{
+    background-color: var(--focus__color);
+    color: var(--not_default_text_color);
+    transition: color .3s ease-in-out;
+}
+
+.button-style:hover{
+    background-color: var(--hover__color);
+    color: var(--not_default_text_color);
+    transition: color .3s ease-in-out;
+}
+
+
+.button-style:active{
+    background-color: var(--active__color);
+    color: var(--not_default_text_color);
+    transition: color .3s ease-in-out;
+}
+
+.account__style:focus{
+    color: var(--focus__color);
+    background-image: url("../img/keyboard_tab.svg");
+    transition: color 0 ease-in-out;
+}
+
+.account__style:hover{
+    color: var(--hover__light__color);
+    background-image: url("../img/keyboard_tab_light.svg");
+    transition: color 0 ease-in-out;
+}
+
+
+.account__style:active{
+    color: var(--active__color);
+    padding: 5px;
+    border: 1px solid #CC9933;
+    background-image: url("../img/keyboard_tab.svg");
+    transition: color 0 ease-in-out;
+}
+
+.email-style:focus{
+    color: var(--focus__color);
+    transition: color 0 ease-in-out;
+}
+
+.email-style:hover{
+    color: var(--hover__light__color);
+    transition: color 0 ease-in-out;
+}
+
+
+.email-style:active{
+    color: var(--active__color);
+    padding: 5px;
+    border: 1px solid #CC9933;
+    transition: color 0 ease-in-out;
+}
+
 /* <----------------Header----------------> */
 
 .header{
@@ -127,6 +196,7 @@ body {
     font-size: 16px;
     line-height: 16px;
     color: #CC9933;
+    border: none;
     background-image: url(../img/keyboard_tab.svg);
     padding-left: 29px;
     background-size: 24px;
@@ -223,7 +293,7 @@ body {
     min-height: 258px;
     margin-bottom: 24px;
     margin-right: 24px;
-    background-image: url("../img/Rectangle\ 15.png");
+    background-image: var(--gradient), url("../img/Rectangle\ 15.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -235,7 +305,7 @@ body {
     position: relative;
     width: 573px;
     min-height: 258px;
-    background-image: url("../img/Rectangle\ 15\ \(1\).png");
+    background-image: var(--gradient), url("../img/Rectangle\ 15\ \(1\).png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -648,6 +718,7 @@ body {
 }
 
 .accomodation-all_variants{
+    position: relative;
     display: flex;
     background-image: url("../img/41.jpg");
     background-repeat: no-repeat;
@@ -655,6 +726,15 @@ body {
     min-height: 440px;
     padding: 27px 54px;
 }
+
+.accomodation-all_variants a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
 .accommodation-all_variants-a{
     font-family: 'Muller';
@@ -808,6 +888,7 @@ body {
 
 .left-div{
     min-height: 528px;
+    margin-right: 52px;
 }
 
 .contacts-ul{
@@ -815,11 +896,10 @@ body {
     list-style-type: none;
     padding: 0;
     width: 375px;
-    margin-right: 52px;
     margin-bottom: 45px;
 }
 
-.contacts-li:not(:last-child){
+.contacts-li{
     display: flex;
     width: 375px;
     min-height: 72px;
