@@ -83,78 +83,6 @@ body {
     margin: 0;
 }
 
-/* <----------------Transitions----------------> */
-
-.button-style:focus{
-    background-color: var(--focus__color);
-    color: var(--not_default_text_color);
-    transition: color .3s ease-in-out;
-}
-
-.button-style:hover{
-    background-color: var(--hover__color);
-    color: var(--not_default_text_color);
-    transition: color .3s ease-in-out;
-}
-
-
-.button-style:active{
-    background-color: var(--active__color);
-    color: var(--not_default_text_color);
-    transition: color .3s ease-in-out;
-}
-
-.account__style:focus{
-    color: var(--focus__color);
-    background-image: url("../img/keyboard_tab.svg");
-    transition: color .3s ease-in-out;
-}
-
-.account__style:hover{
-    color: var(--hover__light__color);
-    background-image: url("../img/keyboard_tab_light.svg");
-    transition: color .3s ease-in-out;
-}
-
-
-.account__style:active{
-    color: var(--active__color);
-    padding: 5px;
-    outline: 1px solid #CC9933;
-    background-image: url("../img/keyboard_tab.svg");
-    transition: color .3s ease-in-out;
-}
-
-.email-style:focus{
-    color: var(--focus__color);
-    transition: color .3s ease-in-out;
-}
-
-.email-style:hover{
-    color: var(--hover__light__color);
-    transition: color .3s ease-in-out;
-}
-
-
-.email-style:active{
-    color: var(--active__color);
-    outline: 1px solid #CC9933;
-    transition: color .3s ease-in-out;
-}
-
-.icon-style:focus svg path{
-    fill: var(--focus__color);
-}
-
-.icon-style:hover svg path{
-    fill: var(--hover__light__color);
-}
-
-
-.icon-style:active svg path{
-    fill: var(--active__color);
-}
-
 /* <----------------Header----------------> */
 
 .header{
@@ -192,31 +120,79 @@ body {
     line-height: 20px;
     color: #666666;
     vertical-align: top;
-    align-self: center;
+    align-self: top;
 }
 
-.header-personal_account{
-    padding: 17px 0;
+.address-phone{
+    outline-offset: 0;
+    outline: 1px solid transparent;
+}
+
+.address-phone:hover{
+    color: var(--hover__color);
+    transition: color .3s ease-in-out;
+}
+
+.address-phone:focus{
+    outline-color: var(--focus__color);
+    outline-offset: 5px;
+    transition: outline-color .3s ease-in-out, outline-offset .3s ease-in-out;
+}
+
+.address-phone:active{
+    color: var(--active__color);
+    transition: color .3s ease-in-out;
+}
+
+.div__cabinet{
     position: absolute;
     display: inline-block;
     align-self: center;
-    vertical-align: top;
+    vertical-align: middle;
     right: 0;
+    top: 17px;
     font-family: 'Muller';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
     color: #CC9933;
+    outline: 1px solid transparent;
+    outline-offset: 0;
     border: none;
-    background-image: url(../img/keyboard_tab.svg);
-    padding-left: 29px;
-    background-size: 24px;
-    background-repeat: no-repeat;
-    background-position: left center;
-    outline: inherit;
-    outline-offset: 5px 5px 5px 29px;
-    transition: outline .3s ease-in-out;
+    background-color: inherit;
+}
+
+.div__cabinet:hover{
+    color: var(--hover__light__color);
+    transition: color .3s ease-in-out;
+}
+
+.div__cabinet:focus{
+    color: var(--focus__color);
+    outline-color: var(--focus__color);
+    outline-offset: 5px;
+    transition: color .3s ease-in-out, outline-color .3s ease-in-out, outline-offset .3s ease-in-out;
+}
+
+.div__cabinet:active{
+    color: var(--active__color);
+    transition: color .3s ease-in-out;
+}
+
+.div__cabinet:hover svg path{
+    fill: var(--hover__light__color);
+    transition: fill .3s ease-in-out;
+}
+
+.div__cabinet:focus svg path{
+    fill: var(--focus__color);
+    transition: fill .3s ease-in-out;
+}
+
+.div__cabinet:active svg path{
+    fill: var(--active__color);
+    transition: fill .3s ease-in-out;
 }
 
 .header-nav{
@@ -248,9 +224,33 @@ body {
     font-size: 16px;
     line-height: 16px;
     color: #666666;
-    outline: inherit;
+    outline: 1px solid transparent;
+    outline-offset: 0;
+}
+
+.header-link:hover{
+    color: var(--hover__color);
+    transition: color 0 ease-in-out;
+}
+
+.header-link:focus{
+    outline-color: var(--focus__color);
     outline-offset: 5px;
-    transition: border-color .3s ease-in-out;
+    transition: outline-color .3s, outline-offset .3s;
+}
+
+.header-link:active{
+    color: var(--active__color);
+    transition: color 0 ease-in-out;
+}
+
+.header-nav{
+    display: inline-block;
+}
+
+.header-list{
+    display: inline-block;
+    padding: 0;
 }
 
 .header-list-additional{
@@ -273,7 +273,25 @@ body {
     font-size: 16px;
     line-height: 16px;
     color: #CC9933;
-    transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+
+.header-list-additional-item:hover{
+    background-color: var(--hover__color);
+    color: var(--not_default_text_color);
+}
+
+.header-list-additional-item:focus{
+    background-color: var(--focus__color);
+    color: var(--not_default_text_color);
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.header-list-additional-item:active{
+    background-color: var(--active__color);
+    color: var(--not_default_text_color);
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 
 /* <----------------Special_offers----------------> */
@@ -319,6 +337,23 @@ body {
     border-radius: 15px;
 }
 
+.special_offer-1 a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: 1px solid transparent;
+    outline-offset: 0;
+}
+
+.special_offer-1 a:focus:before{
+    outline-color: var(--focus__color);
+    outline-offset: 8px;
+    transition: outline-color .3s, outline-offset .3s;
+}
+
 .special_offer-2{
     padding: 40px 108px 40px 45px;
     position: relative;
@@ -329,6 +364,23 @@ body {
     background-size: cover;
     background-position: center;
     border-radius: 15px;
+}
+
+.special_offer-2 a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: 1px solid transparent;
+    outline-offset: 0;
+}
+
+.special_offer-2 a:focus:before{
+    outline-color: var(--focus__color);
+    outline-offset: 8px;
+    transition: outline-color .3s, outline-offset .3s;
 }
 
 .special_offer-title{
@@ -365,6 +417,23 @@ body {
     color: #FFFFFF;
 }
 
+.special_offer-3 a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: 1px solid transparent;
+    outline-offset: 0;
+}
+
+.special_offer-3 a:focus:before{
+    outline-color: var(--focus__color);
+    outline-offset: 8px;
+    transition: outline-color .3s, outline-offset .3s;
+}
+
 .special_offer-prices{
     margin-bottom: 47px;
     z-index: 1;
@@ -399,6 +468,21 @@ body {
     background-position: right;
 }
 
+.special_offer-buttons:hover{
+    width: 112.28px;
+    transition: width .3s;
+}
+
+.special_offer-buttons:focus{
+    width: 101.28px;
+    transition: width .3s;
+}
+
+.special_offer-buttons:active{
+    width: 101.28px;
+    transition: width .3s;
+}
+
 .special_offers-button-more{
     background: none;
     font-family: 'Muller';
@@ -407,6 +491,11 @@ body {
     font-size: 16px;
     line-height: 16px;
     color: #F0BF5F;
+}
+
+.special_offers-button-more:active{
+    color: var(--not_default_text_color);
+    transition: color .1s;
 }
 
 /* <----------------About_us----------------> */
@@ -444,6 +533,23 @@ body {
 
 .card{
     min-height: 330px;
+}
+
+.card a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: 1px solid transparent;
+    outline-offset: 0;
+}
+
+.card a:focus:before{
+    outline-color: var(--focus__color);
+    outline-offset: 8px;
+    transition: outline-color .3s, outline-offset .3s;
 }
 
 .services-title{
@@ -496,6 +602,24 @@ body {
     background-repeat: no-repeat;
     background-position: center right;
     padding-right: 15px;
+}
+
+.services-items-title:hover{
+    color: var(--hover__light__color);
+    padding-right: 26px;
+    transition: color .3s ease-in-out, padding .3s;
+}
+
+.services-items-title:focus{
+    color: var(--focus__color);
+    padding-right: 15px;
+    transition: color .3s ease-in-out, padding .3s;
+}
+
+.services-items-title:active{
+    color: var(--active__color);
+    padding-right: 15px;
+    transition: color .3s ease-in-out, padding .3s;
 }
 
 .services-items-paragraph{
@@ -727,6 +851,24 @@ body {
     transition: background-color .3s ease-in-out;
 }
 
+.accommodation-content-ul-li-button:hover{
+    background-color: var(--hover__color);
+    color: var(--not_default_text_color);
+    transition: background-color .3s, color .3s;
+}
+
+.accommodation-content-ul-li-button:focus{
+    background-color: var(--focus__color);
+    color: var(--not_default_text_color);
+    transition: background-color .3s, color .3s;
+}
+
+.accommodation-content-ul-li-button:active{
+    background-color: var(--active__color);
+    color: var(--not_default_text_color);
+    transition: background-color .3s, color .3s;
+}
+
 .accommodation-price{
     font-weight: 700;
     font-size: 20px;
@@ -879,6 +1021,24 @@ body {
     transition: background-color .3s ease-in-out;
 }
 
+.want_tour-button:hover{
+    background-color: var(--hover__color);
+    color: var(--not_default_text_color);
+    transition: background-color .3s, color .3s;
+}
+
+.want_tour-button:focus{
+    background-color: var(--focus__color);
+    color: var(--not_default_text_color);
+    transition: background-color .3s, color .3s;
+}
+
+.want_tour-button:active{
+    background-color: var(--active__color);
+    color: var(--not_default_text_color);
+    transition: background-color .3s, color .3s;
+}
+
 .select-arrow{
     appearance: none;
     background-image: url("../img/Rectangle\ 2arrow.svg");
@@ -976,6 +1136,25 @@ body {
     color: #CC9933;
     outline: inherit;
     outline-offset: 5px;
+    outline: 1px solid transparent;
+    outline-offset: 0px;
+}
+
+.phone:hover{
+    color: var(--hover__light__color);
+    transition: color .3s;
+}
+
+.phone:focus{
+    color: var(--focus__color);
+    outline-color: var(--focus__color);
+    outline-offset: 5px;
+    transition: color .3s, outline-color .3s, outline-offset .3s;
+}
+
+.phone:active{
+    color: var(--active__color);
+    transition: color .3s;
 }
 
 .email-content-ul{
@@ -991,8 +1170,25 @@ body {
     line-height: 150%;
     color: #CC9933;
     width: 128px;
-    outline: inherit;
+    outline: 1px solid transparent;
+    outline-offset: 0;
+}
+
+.email:hover{
+    color: var(--hover__light__color);
+    transition: color .3s;
+}
+
+.email:focus{
+    color: var(--focus__color);
+    outline-color: var(--focus__color);
     outline-offset: 5px;
+    transition: color .3s, outline-color .3s, outline-offset .3s;
+}
+
+.email:active{
+    color: var(--active__color);
+    transition: color .3s;
 }
 
 .email-text{
@@ -1019,6 +1215,24 @@ body {
     border-radius: 10px;
     background: none;
     transition: background-color .3s ease-in-out;
+}
+
+.make_the_road:hover{
+    background-color: var(--hover__color);
+    color: var(--not_default_text_color);
+    transition: background-color .3s, color .3s;
+}
+
+.make_the_road:focus{
+    background-color: var(--focus__color);
+    color: var(--not_default_text_color);
+    transition: background-color .3s, color .3s;
+}
+
+.make_the_road:active{
+    background-color: var(--active__color);
+    color: var(--not_default_text_color);
+    transition: background-color .3s, color .3s;
 }
 
 .contacts{
@@ -1104,8 +1318,25 @@ body {
     font-size: 16px;
     line-height: 150%;
     color: #CC9933;
-    outline: inherit;
+    outline: 1px solid transparent;
+    outline-offset: 0;
+    transition: color .3s, outline-color .3s, outline-offset .3s;
+}
+
+.footer-phone_email:hover{
+    color: var(--hover__light__color);
+    transition: color .3s;
+}
+
+.footer-phone_email:focus{
+    color: var(--focus__color);
+    outline-color: var(--focus__color);
     outline-offset: 5px;
+}
+
+.footer-phone_email:active{
+    color: var(--active__color);
+    transition: color .3s;
 }
 
 .sun_img{
@@ -1119,4 +1350,19 @@ body {
     width: 25px;
     margin-bottom: 20px;
     background-color: inherit;
+}
+
+.messenger-img:hover svg path{
+    fill: var(--hover__color);
+    transition: fill .3s ease-in-out;
+}
+
+.messenger-img:focus svg path{
+    fill: var(--focus__color);
+    transition: fill .3s ease-in-out;
+}
+
+.messenger-img:active svg path{
+    fill: var(--active__color);
+    transition: fill .3s ease-in-out;
 }
