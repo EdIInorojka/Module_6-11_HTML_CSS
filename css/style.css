@@ -126,11 +126,11 @@ body {
 .address-phone{
     outline-offset: 0;
     outline: 1px solid transparent;
+    transition: color .3s ease-in-out;
 }
 
 .address-phone:hover{
     color: var(--hover__color);
-    transition: color .3s ease-in-out;
 }
 
 .address-phone:focus{
@@ -161,11 +161,11 @@ body {
     outline-offset: 0;
     border: none;
     background-color: inherit;
+    transition: color .3s ease-in-out;
 }
 
 .div__cabinet:hover{
     color: var(--hover__light__color);
-    transition: color .3s ease-in-out;
 }
 
 .div__cabinet:focus{
@@ -180,9 +180,12 @@ body {
     transition: color .3s ease-in-out;
 }
 
+.div__cabinet svg path{
+    transition: fill .3s ease-in-out;
+}
+
 .div__cabinet:hover svg path{
     fill: var(--hover__light__color);
-    transition: fill .3s ease-in-out;
 }
 
 .div__cabinet:focus svg path{
@@ -226,11 +229,11 @@ body {
     color: #666666;
     outline: 1px solid transparent;
     outline-offset: 0;
+    transition: color .3s ease-in-out;
 }
 
 .header-link:hover{
     color: var(--hover__color);
-    transition: color 0 ease-in-out;
 }
 
 .header-link:focus{
@@ -466,11 +469,11 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
+    transition: width .3s;
 }
 
 .special_offer-buttons:hover{
     width: 112.28px;
-    transition: width .3s;
 }
 
 .special_offer-buttons:focus{
@@ -602,12 +605,12 @@ body {
     background-repeat: no-repeat;
     background-position: center right;
     padding-right: 15px;
+    transition: color .3s ease-in-out, padding .3s;
 }
 
 .services-items-title:hover{
     color: var(--hover__light__color);
     padding-right: 26px;
-    transition: color .3s ease-in-out, padding .3s;
 }
 
 .services-items-title:focus{
@@ -848,13 +851,12 @@ body {
     line-height: 16px;
     color: #CC9933;
     background: none;
-    transition: background-color .3s ease-in-out;
+    transition: background-color .3s, color .3s;
 }
 
 .accommodation-content-ul-li-button:hover{
     background-color: var(--hover__color);
     color: var(--not_default_text_color);
-    transition: background-color .3s, color .3s;
 }
 
 .accommodation-content-ul-li-button:focus{
@@ -1018,13 +1020,12 @@ body {
     padding: 13px 30px;
     border: 1px solid #CC9933;
     border-radius: 10px;
-    transition: background-color .3s ease-in-out;
+    transition: background-color .3s, color .3s;
 }
 
 .want_tour-button:hover{
     background-color: var(--hover__color);
     color: var(--not_default_text_color);
-    transition: background-color .3s, color .3s;
 }
 
 .want_tour-button:focus{
@@ -1138,11 +1139,11 @@ body {
     outline-offset: 5px;
     outline: 1px solid transparent;
     outline-offset: 0px;
+    transition: color .3s;
 }
 
 .phone:hover{
     color: var(--hover__light__color);
-    transition: color .3s;
 }
 
 .phone:focus{
@@ -1172,11 +1173,11 @@ body {
     width: 128px;
     outline: 1px solid transparent;
     outline-offset: 0;
+    transition: color .3s;
 }
 
 .email:hover{
     color: var(--hover__light__color);
-    transition: color .3s;
 }
 
 .email:focus{
@@ -1214,7 +1215,7 @@ body {
     border: 1px solid #CC9933;
     border-radius: 10px;
     background: none;
-    transition: background-color .3s ease-in-out;
+    transition: background-color .3s, color .3s;
 }
 
 .make_the_road:hover{
@@ -1232,7 +1233,8 @@ body {
 .make_the_road:active{
     background-color: var(--active__color);
     color: var(--not_default_text_color);
-    transition: background-color .3s, color .3s;
+    border-color: var(--active__color);
+    transition: background-color .3s, color .3s, border-color .3s;
 }
 
 .contacts{
@@ -1320,18 +1322,18 @@ body {
     color: #CC9933;
     outline: 1px solid transparent;
     outline-offset: 0;
-    transition: color .3s, outline-color .3s, outline-offset .3s;
+    transition: color .3s;
 }
 
 .footer-phone_email:hover{
     color: var(--hover__light__color);
-    transition: color .3s;
 }
 
 .footer-phone_email:focus{
     color: var(--focus__color);
     outline-color: var(--focus__color);
     outline-offset: 5px;
+    transition: outline-color .3s, outline-offset .3s;
 }
 
 .footer-phone_email:active{
@@ -1350,11 +1352,11 @@ body {
     width: 25px;
     margin-bottom: 20px;
     background-color: inherit;
+    transition: fill .3s ease-in-out;
 }
 
 .messenger-img:hover svg path{
     fill: var(--hover__color);
-    transition: fill .3s ease-in-out;
 }
 
 .messenger-img:focus svg path{
